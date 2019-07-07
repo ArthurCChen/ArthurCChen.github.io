@@ -3,39 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>陈语凝的个人主页</title>
+    <title>个人网页制作收获与感想</title>
     <!-- 外链 -->
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="images/littleicon.jpg" type="x-jpg" />
-
-
-    <meta name="viewport" content="user-scalable=no">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/coin-slider.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/coin-slider.min.js"></script>
 </head>
 
 <header>
     <nav>
         <div id='trophybar'>
-            <a href="#selfie"><img src="images/Home.jpg" width="50" height="50" transform=rotate(720)></a>
+            <a href="index.html"><img src="images/Home.jpg" width="50" height="50"></a>
             <a href="#article"><img src="images/Menu.jpg" width="50" height="50"></a>
             <a href="#contact"><img src="images/Praise.jpg" width="50" height="50" float=right></a>
-            <a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%20%E9%99%88%E8%AF%AD%E5%87%9D&oq=%25E6%25B8%2585%25E5%258D%258E%25E5%25A4%25A7%25E5%25AD%25A6%25E9%2599%2588%25E8%25AF%25AD%25E5%2587%259D&rsv_pq=d2e55837000274dd&rsv_t=6b0cIwwcguX9wmgiLeQAyourbEUOj28IaAUqUhj48kzpAydPnuApleU9pHk&rqlang=cn&rsv_enter=0&inputT=826&rsv_sug3=7&rsv_sug1=7&rsv_sug7=000&rsv_sug4=1250&rsv_sug=1"
-                target="_blank"><img src="images/Fire.jpg" width="50" height="50" float=right></a>
+            <a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%20%E9%99%88%E8%AF%AD%E5%87%9D&oq=%25E6%25B8%2585%25E5%258D%258E%25E5%25A4%25A7%25E5%25AD%25A6%25E9%2599%2588%25E8%25AF%25AD%25E5%2587%259D&rsv_pq=d2e55837000274dd&rsv_t=6b0cIwwcguX9wmgiLeQAyourbEUOj28IaAUqUhj48kzpAydPnuApleU9pHk&rqlang=cn&rsv_enter=0&inputT=826&rsv_sug3=7&rsv_sug1=7&rsv_sug7=000&rsv_sug4=1250&rsv_sug=1"><img src="images/Fire.jpg" width="50" height="50" float=right></a>
 
         </div>
     </nav>
 </header>
 
 <body>
-    <h1 id='title'><br>陈语凝的个人主页</h1>
-    <div id='top'>
+    <h1 id='title'><br>JavaScript编程题目感想</h1>
+    <div id='text'>
+        <p> JavaScript可谓是前端的大脑与灵魂，是WEB上强大的脚本语言，其特点是无法独立执行，必须嵌入到其他语言中，结合使用；且直接被浏览器解析执行。本次作业尚没有使用DOM & BOM，较为基础。</p>
+        <h2 id='structure'>
+            一、DDL
+        </h2>
+        <p> 本题我利用了js里的Date类，通过字符串silce的操作提取出来年月日之后计算天数差，再进行细节的调解即可。细节的调解包括比较时间来看是否多超过一天。需要注意字符串转数字*1即可。</p>
+        <h2>
+            二、迭代器
+        </h2>
+        <p> 本题引导我们学习C++里迭代器的结构和相关的一些判断。由于在CLASS内写，而且我的代码均是写到了ADDCODE里，没有新添加函数，所以我也没弄明白generator该在哪里添加比较好。就没有使用ES6的yield。主要的话是利用类 中有个栈来存储当前加入栈里的节点。constructor里面直接将根节点加入栈中，hasnext只需要判断是否栈空即可，nextvalue就是将栈里的头元素的val返回，然后将这个元素的所有儿子整体加入栈头即可。
+        </p>
+        <h2>
+            三、fmap
+        </h2>
+        <p>本题我利用递归加类型判断，判断数组当前这个元素是否为数组，如果是数组的话，那么递归进行fmap，如果不是数组的话，而是一个实数或者是空，直接返回function(i)即可。 </p>
+        <h2>
+            四、运算符定义
+        </h2>
+        <p>实现一个operatorDefinition函数，函数接受两个参数的输入，第一个参数是字符串表示的运算符定义语句，第二参数使用字符串表示的仅包含运算符&与括号的表达式，要求返回按照运算符定义所计算的表达式的字符串结果。因为对第四题的广搜debug很失败所以选择了第五题。 </p>
+    </div>
+
+
+    <!-- <div id='top'>
         <p> </p>
         <div id='selfie'>
-            <img src="images/selfie.jpg" width="200">
+            <img src="selfie.jpg" width="200">
         </div>
         <div id='contact'>
             <p>清华大学软件学院本科生 </br>
@@ -45,35 +58,11 @@
         <br>
     </div>
     <div id='article'>
-        <h2> 我的日志</h2>
-        <a href="articles/article1.html" target="_blank">
-            <div class='article1'>
-                <div class='image1'>
-                    <img src="images/article1.jpg" width=100% float=left>
-                </div>
-                <div class='describe1'>
-                    <h3>个人网页制作收获与感想</h3>
-                    <pdes>此次个人网页制作作业给了我“以最高主观能动性”实践的动力，最初因为没学懂div的布局方法遍搜CSDN、Bilibili，后来看着身边伙伴有了炫酷的骚操作便也想学习和迁移到自己的网页之中。</pdes>
-                </div>
-
-            </div>
-        </a>
-        <a href="articles/article2.html" target="_blank">
-            <div class='article1'>
-                <div class='image1'>
-                    <img src="images/article1.jpg" width=100% float=left>
-                </div>
-                <div class='describe1'>
-                    <h3>JavaScript编程题目感想</h3>
-                    <pdes>JavaScript可谓是前端的大脑与灵魂，是WEB上强大的脚本语言，其特点是无法独立执行，必须嵌入到其他语言中，结合使用；且直接被浏览器解析执行。本次作业尚没有使用DOM & BOM，较为基础。</pdes>
-                </div>
-
-            </div>
-        </a>
+        <h2>我的日志</h2>
         <a href="https://blog.csdn.net/mars2009/article/details/79683924" target="_blank">
             <div class='article1'>
                 <div class='image1'>
-                    <img src="images/article1.jpg" width=100% float=left>
+                    <img src="article1.jpg" width=100% float=left>
                 </div>
                 <div class='describe1'>
                     <h3>3分钟熟悉15种CSS居中布局的方式</h3>
@@ -85,7 +74,7 @@
         <a href="https://blog.csdn.net/ysh598923879/article/details/81094241" target="_blank">
             <div class='article1'>
                 <div class='image1'>
-                    <img src="images/article1.jpg" width=100% float=left>
+                    <img src="article1.jpg" width=100% float=left>
                 </div>
                 <div class='describe1'>
                     <h3>如何设置HTML网页title左侧的小图标</h3>
@@ -94,23 +83,31 @@
 
             </div>
         </a>
-    </div>
+        <a href="https://blog.csdn.net/mars2009/article/details/79683924" target="_blank">
+            <div class='article1'>
+                <div class='image1'>
+                    <img src="article1.jpg" width=100% float=left>
+                </div>
+                <div class='describe1'>
+                    <h3>3分钟熟悉15种CSS居中布局的方式</h3>
+                    <pdes>CSS居中是前端工程师经常要面对的问题，也是基本技能之一。今天有时间把CSS居中的方案汇编整理了一下，目前包括水平居中，垂直居中及水平垂直居中方案共15种。</pdes>
+                </div>
 
+            </div>
+        </a>
+        <a href="https://blog.csdn.net/mars2009/article/details/79683924" target="_blank">
+            <div class='article1'>
+                <div class='image1'>
+                    <img src="article1.jpg" width=100% float=left>
+                </div>
+                <div class='describe1'>
+                    <h3>3分钟熟悉15种CSS居中布局的方式</h3>
+                    <pdes>CSS居中是前端工程师经常要面对的问题，也是基本技能之一。今天有时间把CSS居中的方案汇编整理了一下，目前包括水平居中，垂直居中及水平垂直居中方案共15种。</pdes>
+                </div>
 
-    <div id='interest'>
-        <h2>我的兴趣</h2>
-        <div class="slider">
-            <div id="coin1">
-                <a href="https://nba.hupu.com/teams/lakers" target="_blank"><img src="images/slide1.jpg" repeat="no-repeat" width="320" hegith="180" alt="" /></a>
-                <a href="https://www.iqiyi.com/a_19rrhb3xvl.html?vfm=2008_aldbd" target="_blank"><img src="images/slide2.jpg" repeat="no-repeat" width="320" hegith="180" alt="" /></a>
             </div>
-            <div id="coin2">
-                <a href="https://ak.hypergryph.com/index" target="_blank"><img src="images/slide3.png" repeat="no-repeat" width="320" hegith="180" alt="" /></a>
-                <a href="https://www.runoob.com/html/html-tutorial.html" target="_blank"><img src="images/slide4.jpg" repeat="no-repeat" width="320" hegith="180" alt="" /></a>
-            </div>
-            <div class="clr"></div>
-        </div>
-    </div>
+        </a>
+    </div> -->
 
     <footer class="footer-bg" background-image=images/bg.jpg>
         <div class="layout" id="footer" style="opacity: 1; display: block; transform: translateY(0px);">
@@ -184,14 +181,7 @@
         
         #article {
             width: 90%;
-            padding-bottom: 10px;
-            margin: 0 auto;
-            color: #CECCCC
-        }
-        
-        #interest {
-            width: 60%;
-            height: 600px;
+            height: 960px;
             margin: 0 auto;
             color: #CECCCC
         }
@@ -243,21 +233,13 @@
             color: #CECCCC;
         }
         
-        .describe1 {
+        #text {
             width: 80%;
             height: fit-content;
-            float: right;
+            margin: 0 auto;
             color: #CECCCC;
-        }
-        
-        #coin1 {
-            width: 50%;
-            float: left;
-        }
-        
-        #coin2 {
-            width: 50%;
-            float: right;
+            font-size: 20px;
+            font-family: inherit;
         }
         
         footer {
